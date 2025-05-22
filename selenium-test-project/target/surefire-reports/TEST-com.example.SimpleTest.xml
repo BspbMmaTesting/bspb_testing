@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.AppTest" time="3.165" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.SimpleTest" time="2.361" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="23"/>
     <property name="webdriver.chrome.driver" value="C:\Users\user\.cache\selenium\chromedriver\win64\136.0.7103.113\chromedriver.exe"/>
@@ -59,36 +59,36 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="67.0"/>
   </properties>
-  <testcase name="shouldAnswerWithTrue" classname="com.example.AppTest" time="1.62">
+  <testcase name="shouldAnswerWithTrue" classname="com.example.SimpleTest" time="0.932">
     <system-out><![CDATA[[BrowserFactory] Начинаем инициализацию ChromeDriver...
-15:19:42.293 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.9.0
-15:19:42.601 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=136 in cache (valid until 15:26:57 22/05/2025 MSK)
-15:19:42.602 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome136=136.0.7103.113 in cache (valid until 14:26:57 23/05/2025 MSK)
-15:19:42.603 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 136.0.7103.113 (resolved driver for Chrome 136)
-15:19:42.617 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 136.0.7103.113 found in cache
-15:19:42.619 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\user\.cache\selenium\chromedriver\win64\136.0.7103.113\chromedriver.exe
+15:19:45.361 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.9.0
+15:19:45.374 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=136 in cache (valid until 15:26:57 22/05/2025 MSK)
+15:19:45.374 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome136=136.0.7103.113 in cache (valid until 14:26:57 23/05/2025 MSK)
+15:19:45.374 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 136.0.7103.113 (resolved driver for Chrome 136)
+15:19:45.379 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 136.0.7103.113 found in cache
+15:19:45.379 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\user\.cache\selenium\chromedriver\win64\136.0.7103.113\chromedriver.exe
 [BrowserFactory] ChromeDriver успешно создан!
 ]]></system-out>
-    <system-err><![CDATA[мая 22, 2025 3:19:43 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[мая 22, 2025 3:19:46 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 136
-мая 22, 2025 3:19:43 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+мая 22, 2025 3:19:46 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 136.0.7103.114. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.23.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="testGooglePageTitle" classname="com.example.AppTest" time="1.524">
+  <testcase name="testGooglePageTitle" classname="com.example.SimpleTest" time="1.426">
     <system-out><![CDATA[[BrowserFactory] Начинаем инициализацию ChromeDriver...
-15:19:43.826 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.9.0
-15:19:43.833 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=136 in cache (valid until 15:26:57 22/05/2025 MSK)
-15:19:43.834 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome136=136.0.7103.113 in cache (valid until 14:26:57 23/05/2025 MSK)
-15:19:43.834 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 136.0.7103.113 (resolved driver for Chrome 136)
-15:19:43.839 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 136.0.7103.113 found in cache
-15:19:43.839 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\user\.cache\selenium\chromedriver\win64\136.0.7103.113\chromedriver.exe
+15:19:46.293 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.9.0
+15:19:46.297 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=136 in cache (valid until 15:26:57 22/05/2025 MSK)
+15:19:46.297 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome136=136.0.7103.113 in cache (valid until 14:26:57 23/05/2025 MSK)
+15:19:46.297 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 136.0.7103.113 (resolved driver for Chrome 136)
+15:19:46.300 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 136.0.7103.113 found in cache
+15:19:46.300 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\user\.cache\selenium\chromedriver\win64\136.0.7103.113\chromedriver.exe
 [BrowserFactory] ChromeDriver успешно создан!
 Page title is: Google
 ]]></system-out>
-    <system-err><![CDATA[мая 22, 2025 3:19:44 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[мая 22, 2025 3:19:47 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 136
-мая 22, 2025 3:19:44 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+мая 22, 2025 3:19:47 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 136.0.7103.114. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.23.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>

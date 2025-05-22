@@ -1,22 +1,29 @@
 package com.example;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+import org.junit.jupiter.api.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import static org.junit.Assert.assertTrue;
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+import com.example.utils.BrowserFactory;
 
 public class SimpleTest {
 
     private WebDriver driver;
 
-    @Before
+    @BeforeEach
     public void setUp() {
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
+        driver = BrowserFactory.getDriver();
+        // WebDriverManager.chromedriver().setup();
+        // driver = new ChromeDriver();
+    }
+
+    @Test
+    public void shouldAnswerWithTrue() {
+        assertTrue(true);
     }
 
     @Test
@@ -27,7 +34,7 @@ public class SimpleTest {
         assertTrue(title.contains("Google"));
     }
 
-    @After
+    @AfterEach
     public void tearDown() {
         if (driver != null) {
             driver.quit();
